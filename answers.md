@@ -19,6 +19,10 @@ h1.innerText = "Michelle";
 
 Select the heading that says "Employment" and change it to something else. (hint: use a descendant selector)
 
+var employment = document.querySelector('#employment');
+var empH3 = employment.querySelector('h3');
+empH3.innerText = "Experience";
+
 Change the colour of the body.
 
 Change the colour of each element using the highlight class. Use a for loop to do this.
