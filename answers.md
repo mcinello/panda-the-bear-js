@@ -25,9 +25,15 @@ empH3.innerText = "Experience";
 
 Change the colour of the body.
 
+document.body.style.backgroundColor = "#868686";
+
 Change the colour of each element using the highlight class. Use a for loop to do this.
 
+var list = document.querySelectorAll(".highlight");
+list.forEach(function(item) { item.style.color = "#ADD8E6";})
+
 Change the font family of the h1 to 'monospace'.
+h1.style.fontFamily = "monospace";
 
 Find a way to select the round icons in the sidebar and then change their colour.
 
