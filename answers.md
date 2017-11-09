@@ -12,10 +12,12 @@ var portfolioImgClass = document.querySelector('.portfolio-image');
 var portfolioImg = portfolioImgClass.querySelector('img');
 portfolioImg.src = "images/water.jpeg";
 
+
 Select the heading that says "Panda the Bear" and change it to your own name.
 
 var h1 = document.querySelector('h1');
 h1.innerText = "Michelle";
+
 
 Select the heading that says "Employment" and change it to something else. (hint: use a descendant selector)
 
@@ -23,24 +25,32 @@ var employment = document.querySelector('#employment');
 var empH3 = employment.querySelector('h3');
 empH3.innerText = "Experience";
 
+
 Change the colour of the body.
 
 document.body.style.backgroundColor = "#868686";
+
 
 Change the colour of each element using the highlight class. Use a for loop to do this.
 
 var list = document.querySelectorAll(".highlight");
 list.forEach(function(item) { item.style.color = "#ADD8E6";})
 
+
 Change the font family of the h1 to 'monospace'.
 h1.style.fontFamily = "monospace";
+
 
 Find a way to select the round icons in the sidebar and then change their colour.
 
 var icon = document.querySelectorAll('.action-icon-bg');
 icon.forEach(function(icon){ icon.style.backgroundColor = "black";})
 
+
 Scroll down to the contact form. Change the placeholder attribute of the name field to "identify yourself".
+
+document.getElementsByName('name')[0].placeholder='identify yourself';
+
 
 Change the placeholder attribute of the message field to "state your business".
 
