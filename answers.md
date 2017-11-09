@@ -37,6 +37,9 @@ h1.style.fontFamily = "monospace";
 
 Find a way to select the round icons in the sidebar and then change their colour.
 
+var icon = document.querySelectorAll('.action-icon-bg');
+icon.forEach(function(icon){ icon.style.backgroundColor = "black";})
+
 Scroll down to the contact form. Change the placeholder attribute of the name field to "identify yourself".
 
 Change the placeholder attribute of the message field to "state your business".
