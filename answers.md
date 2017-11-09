@@ -56,14 +56,29 @@ Change the placeholder attribute of the message field to "state your business".
 
 document.getElementsByName('message')[0].placeholder='state your business';
 
-document.getElementsByName('name')[0].value = "your nemesis";
 
 Give the name field a "value" attribute of "your nemesis".
 
+document.getElementsByName('name')[0].value = "your nemesis";
+
+
 Change the value attribute of the email field to "koalathebear@gmail.com".
+
+document.getElementsByName('email')[0].value = "koalathebear@gmail.com";
+
 
 Change the value of the submit button on the contact form to "En garde!".
 
+document.getElementsByName('submit')[0].value = "En garde!";
+
+
 We should stop Koala from sending an email to Panda that they might regret! Find a way to disable the submit button (hint: familiarize yourself with the disabled attribute).
 
+document.getElementsByName('submit')[0].disabled = true;
+
+
 We should help Panda protect their privacy by erasing their personal details from the sidebar.
+
+var parent = document.querySelector('aside');
+var bioInfo = document.querySelector('.bio-info');
+parent.removeChild(bioInfo);
