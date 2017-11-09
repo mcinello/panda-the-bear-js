@@ -54,6 +54,10 @@ document.getElementsByName('name')[0].placeholder='identify yourself';
 
 Change the placeholder attribute of the message field to "state your business".
 
+document.getElementsByName('message')[0].placeholder='state your business';
+
+document.getElementsByName('name')[0].value = "your nemesis";
+
 Give the name field a "value" attribute of "your nemesis".
 
 Change the value attribute of the email field to "koalathebear@gmail.com".
