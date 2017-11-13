@@ -82,3 +82,40 @@ We should help Panda protect their privacy by erasing their personal details fro
 var parent = document.querySelector('aside');
 var bioInfo = document.querySelector('.bio-info');
 parent.removeChild(bioInfo);
+
+================================================================================
+PART 2
+================================================================================
+Panda the Bear is lying about their skills! Take the "time travel" skill off the page to satisfy your personal sense of justice. Use your googling and docs-skimming skillz to find a jQuery function that will allow you to remove elements from the DOM. (hint: there are multiple ways of doing this, but the parent() function might be useful when it comes to selecting the right element)
+
+var skills = document.querySelectorAll('.bar-default');
+skills[2].remove();
+
+Adding Elements to the DOM
+
+That drawing of Pikachu is really cute. Let’s duplicate it using cloneNode() and insert it at the bottom of the .portfolio-container using insertAdjacentHTML() or appendChild().
+
+var portfolio = document.querySelectorAll('.portfolio-container');
+
+for (var i = 0, i < 10; ++i) {
+  var pikaClone = document.querySelector('#right-image').cloneNode(true)
+  container.appendChild(pikaClone)
+}
+
+Let’s add a message about when the page was last updated. We'll do this by appending a new <li> element to the <ul> in the sidebar (you might need to refresh the page to bring back the list items that we emptied out earlier).
+
+var listItem = document.createElement('li');
+var leftSpan = document.createElement('span');
+var lastUpdated = document.createTextNode('page last updated on');
+leftSpan.appendChild(lastUpdated);
+listItem.appendChild(leftSpan);
+
+var day = new Date();
+
+var rightSpan = document.createElement('span');
+rightSpan.className = "bio-info-value";
+rightSpan.innerHTML = day;
+listItem.appendChild(rightSpan);
+
+var ul = document.querySelector('.bio-info');
+ul.appendChild(listItem);
